@@ -568,3 +568,269 @@ header .container nav .form i {
 	}
 }
 /* End Of About */
+/* Stats */
+.stats {
+	position: relative;
+	padding-block: var(--section-padding);
+	background-image: url(../images/stats.png);
+	background-size: cover;
+	text-align: center;
+}
+.stats .overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0 0 0 / 70%);
+}
+.stats .container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+}
+.stats .container .box {
+	flex: 1;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--transparent-color);
+}
+@media (max-width: 767px) {
+	.stats .container .box {
+		flex-basis: 100%;
+		border: 2px solid white;
+		border-top: none;
+	}
+	.stats .container .box:first-of-type {
+		border-top: 2px solid white;
+	}
+}
+@media (min-width: 768px) {
+	.stats .container .box {
+		flex-basis: 50%;
+	}
+}
+@media (min-width: 992px) {
+	.stats .container .box {
+		flex-basis: 25%;
+	}
+}
+.stats .container .box .number,
+.stats .container .box i {
+	margin-bottom: 30px;
+}
+.stats .container .box i {
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.stats .container .box .number {
+	font-weight: bold;
+	font-size: 50px;
+}
+.stats .container .box p {
+	letter-spacing: 2px;
+}
+/* End Of Stats */
+/* Skills */
+.our-skills {
+	padding-block: var(--section-padding);
+}
+.our-skills .container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+	.our-skills .container > div {
+		flex-basis: 45%;
+	}
+}
+@media (max-width: 991px) {
+	.our-skills .container > div {
+		margin-bottom: 100px;
+	}
+}
+.our-skills .container > div > h3 {
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.our-skills .container > div > p {
+	text-align: center;
+	color: #777;
+	line-height: 2;
+	margin-bottom: 50px;
+}
+.our-skills .container .testimonials .test-box {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.our-skills .container .testimonials .test-box img {
+	width: 100px;
+	height: 100px;
+	margin-right: 50px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+@media (max-width: 767px) {
+	.our-skills .container .testimonials .test-box {
+		flex-direction: column;
+		text-align: center;
+	}
+	.our-skills .container .testimonials .test-box img {
+		width: 150px;
+		height: 150px;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}
+.our-skills .container .testimonials .test-box .text {
+	line-height: 2;
+	border-bottom: 2px solid #ccc;
+}
+.our-skills .container .testimonials .test-box .text p {
+	text-align: right;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #777;
+}
+.our-skills .container .testimonials .bullets {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+.our-skills .container .testimonials .bullets li {
+	width: 14px;
+	height: 14px;
+	margin-right: 15px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px solid #aaa;
+}
+.our-skills .container .testimonials .bullets li.active {
+	background-color: var(--main-color);
+	border-color: var(--main-color);
+}
+.our-skills .container .skills .skill-holder {
+	margin-bottom: 30px;
+}
+.our-skills .container .skills .skill-holder h4 {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+	.our-skills .container .skills .skill-holder h4 {
+		text-align: center;
+	}
+}
+.our-skills .container .skills .skill-holder .prog {
+	width: 100%;
+	height: 30px;
+	background-color: #dedadc;
+}
+.our-skills .container .skills .skill-holder .prog span {
+	display: block;
+	position: relative;
+	height: 100%;
+	background-color: var(--main-color);
+}
+.our-skills .container .skills .skill-holder .prog span::before {
+	content: attr(data-progress);
+	position: absolute;
+	right: 0;
+	top: calc(-100% - 15px);
+	padding: 5px 10px;
+	background-color: black;
+	color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transform: translateX(50%);
+	-moz-transform: translateX(50%);
+	-ms-transform: translateX(50%);
+	-o-transform: translateX(50%);
+	transform: translateX(50%);
+}
+.our-skills .container .skills .skill-holder .prog span::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: -20px;
+	border: 13px solid transparent;
+	border-top-color: black;
+	-webkit-transform: translateX(50%);
+	-moz-transform: translateX(50%);
+	-ms-transform: translateX(50%);
+	-o-transform: translateX(50%);
+	transform: translateX(50%);
+}
+/* End Of Skills */
+/* Quote  */
+.quote {
+	padding-block: var(--section-padding);
+	background-image: url(../images/quote.jpg);
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.quote .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0 0 0 / 50%);
+}
+.quote .container q {
+	font-family: "Permanent Marker", cursive;
+	position: relative;
+	font-size: 40px;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	line-height: 2;
+	font-style: italic;
+}
+.quote .container p {
+	position: relative;
+	font-family: "Permanent Marker", cursive;
+	margin-top: 20px;
+	font-size: 30px;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	line-height: 2;
+	font-style: italic;
+	text-align: right;
+}
+@media (max-width: 767px) {
+	.quote .container p {
+		text-align: center;
+	}
+}
+/* End Of Quote */

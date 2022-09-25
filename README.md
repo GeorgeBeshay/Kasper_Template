@@ -6,6 +6,6 @@
 
 ## <p align="center">[Template Design Link](https://www.graphberry.com/item/kasper-one-page-psd-template)</p>
 
-## <p align="center">`Template Design Progress:` ![52%](https://progress-bar.dev/52?title=Progress)</p>
+## <p align="center">`Template Design Progress:` ![74%](https://progress-bar.dev/74?title=Progress)</p>
 
 ---
