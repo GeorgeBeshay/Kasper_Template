@@ -324,6 +324,7 @@ header .container nav .form i {
 	}
 	.services .srv-box i {
 		margin-bottom: 30px;
+		margin-right: 0;
 	}
 }
 .services .srv-box h3 {
