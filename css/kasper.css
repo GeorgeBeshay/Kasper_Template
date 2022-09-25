@@ -835,3 +835,228 @@ header .container nav .form i {
 	}
 }
 /* End Of Quote */
+/* Pricing */
+.pricing {
+	padding-block: var(--section-padding);
+}
+.pricing .container .prices-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+.pricing .container .prices-container .offer {
+	background-color: #fcfcfc;
+	flex-basis: 24%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+	.pricing .container .prices-container .offer {
+		flex-basis: 49%;
+	}
+}
+@media (max-width: 767px) {
+	.pricing .container .prices-container .offer {
+		flex-basis: 100%;
+	}
+}
+.pricing .container .prices-container .offer .title {
+	padding: 40px 20px;
+	border: 2px solid var(--main-color);
+	border-left: none;
+	border-right: none;
+}
+.pricing .container .prices-container .offer .title p {
+	font-size: 30px;
+	letter-spacing: 1px;
+	line-height: 2;
+	text-transform: uppercase;
+}
+.pricing .container .prices-container .offer .title h3 {
+	font-size: 65px;
+	position: relative;
+}
+.pricing .container .prices-container .offer .title h3::before {
+	content: "$";
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	font-weight: normal;
+	font-size: 30px;
+	-webkit-transform: translateX(-65px);
+	-moz-transform: translateX(-65px);
+	-ms-transform: translateX(-65px);
+	-o-transform: translateX(-65px);
+	transform: translateX(-65px);
+}
+.pricing .container .prices-container .offer .title h3::after {
+	content: "/Mo";
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	font-size: 20px;
+	transform: translateX(90px);
+	-webkit-transform: translateX(90px);
+	-moz-transform: translateX(90px);
+	-ms-transform: translateX(90px);
+	-o-transform: translateX(90px);
+}
+.pricing .container .prices-container .offer .feature-box {
+	border-bottom: 2px solid var(--main-color);
+}
+.pricing .container .prices-container .offer .feature-box .feature {
+	width: fit-content;
+	padding: 30px 20px;
+	margin-inline: auto;
+	font-size: 18px;
+	position: relative;
+}
+.pricing
+	.container
+	.prices-container
+	.offer
+	.feature-box
+	.feature:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	width: 120px;
+	height: 1px;
+	background-color: var(--main-color);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
+.pricing .container .prices-container .offer .button {
+	padding-block: 65px;
+}
+.pricing .container .prices-container .offer .button a {
+	padding: 20px 30px;
+	border: 1px solid var(--main-color);
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 18px;
+	font-weight: 750;
+}
+.pricing .container .contact-us {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 25px;
+}
+.pricing .container .contact-us span {
+	font-family: "Permanent Marker", cursive;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+.pricing .container .contact-us a {
+	display: block;
+	width: fit-content;
+	font-size: 20px;
+	line-height: 2;
+	letter-spacing: 1.5px;
+	margin: 30px auto;
+	padding: 15px 30px;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: black;
+	background-color: var(--main-color);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	border: none;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+.pricing .container .contact-us a:hover {
+	padding: 25px 40px;
+	letter-spacing: 5px;
+}
+/* End Of Pricing */
+/* Subscribe */
+.subscribe {
+	padding-block: var(--section-padding);
+	background-image: url(../images/subscribe.jpg);
+	background-size: cover;
+	color: white;
+	position: relative;
+}
+.subscribe::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0 0 0 / 40%);
+}
+.subscribe .container {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+@media (max-width: 991px) {
+	.subscribe .container {
+		flex-direction: column;
+	}
+}
+.subscribe .container form {
+	display: flex;
+	position: relative;
+	width: 500px;
+	max-width: 100%;
+}
+.subscribe .container form i {
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.subscribe .container form input[type="Email"] {
+	border: 1px solid white;
+	border-right: none;
+	background-color: transparent;
+	padding: 20px 20px 20px 60px;
+	caret-color: var(--main-color);
+	width: calc(100% - 130px);
+}
+.subscribe .container form ::placeholder {
+	color: white;
+}
+.subscribe .container form input[type="submit"] {
+	width: 130px;
+	background-color: var(--main-color);
+	color: black;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+	border: 1px solid white;
+	border-left: none;
+	text-transform: uppercase;
+}
+.subscribe .container form input:focus {
+	outline: none;
+}
+.subscribe .container .text {
+	line-height: 2;
+	margin-left: 50px;
+	font-size: 25px;
+}
+@media (max-width: 991px) {
+	.subscribe .container .text {
+		margin-top: 30px;
+		text-align: center;
+	}
+}
+/* End Of Subscribe */
