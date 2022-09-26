@@ -1055,6 +1055,7 @@ header .container nav .form i {
 }
 @media (max-width: 991px) {
 	.subscribe .container .text {
+		margin-left: 0;
 		margin-top: 30px;
 		text-align: center;
 	}
